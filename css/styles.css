@@ -1,0 +1,229 @@
+@import url(http://fonts.googleapis.com/css?family=Josefin+Sans:300,400,700|Open+Sans:400,300);
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  background-color: #000;
+}
+
+a  {
+  color: #555;
+}
+a:hover {
+  color: #ccc;
+    -webkit-transition: ease-in-out all .2s;
+      moz-transition: ease-in-out all .2s;
+       -o-transition: ease-in-out all .2s;
+          transition: ease-in-out all .2s;
+}
+.clear {
+  clear: both;
+}
+#header {
+  background: #fff;
+}
+/*Nav*/
+.navbar {
+  margin: 0;
+}
+.navbar-brand {
+  margin: 0;
+  padding: 0;
+}
+.navbar-default,
+.navbar-default .navbar-toggle:focus {
+  background: none;
+  border: none;
+}
+.navbar-default .navbar-nav>li>a {
+  color: #555;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav>li>a:hover {
+  color: #ccc;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background: #c49a6c;
+}
+.navbar-default .navbar-toggle,
+.navbar-default .navbar-toggle:hover {
+  background: none;
+  border: 1px solid #c49a6c;
+  border-radius: 0;
+}
+/*Banner*/
+.banner {
+  background-image: url('../images/banner.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 110px;
+}
+
+/*Content*/
+.content {
+  color: #fff;
+}
+.content.main {
+  background: transparent url('../images/ornamentBig.png') center center no-repeat;
+  border-top:  1px solid #808080;
+  margin: 0 auto;
+  padding: 30px 0 0;
+  text-align: center;
+}
+.content.main a {
+  color: #c49a6c;
+}
+.content h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 0;
+}
+
+/*Somebody's getting married*/
+.dateWrapper {
+  margin: 30px auto 0px;
+}
+.date {
+  background-image: url('../images/date.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  min-height: 115px;
+}
+
+/*Informational Content*/
+.row.info {
+  padding: 50px 0;
+}
+.row.info h3 {
+  color: #c49a6c;
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+.row.info p {
+  color: #555;
+}
+.col-md-4.zero,
+.col-md-8.zero {
+  padding: 0;
+}
+
+.col-md-4.col-xs-12.zero {
+  text-align: center;
+}
+.col-md-4.col-xs-12.zero .imageWrapper {
+  border-radius: 50%;
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  overflow: hidden;
+}
+.col-md-4.col-xs-12.zero .imageWrapper.h {
+  background: transparent url('../images/honduras.jpg') -20px -50px no-repeat;
+}
+.col-md-4.col-xs-12.zero .imageWrapper.c {
+  background: transparent url('../images/chile.jpg') center bottom no-repeat;
+  /*background-size: 100%;*/
+}
+
+/*About Us*/
+#about {
+  background: #fff;
+}
+#about h3 {
+/*  color: #c49a6c;
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;*/
+}
+#about p {
+  color: #555;
+}
+#about .story {
+  background: transparent url('../images/ornament.png') center 150px no-repeat;
+  margin-bottom: 30px; 
+  padding-bottom: 50px;
+  border-bottom: 1px solid #c49a6c;
+}
+#about .col-md-6.us {
+  border-left: 1px solid #c49a6c;
+}
+
+/*The Propsal*/
+#proposal {
+  background: #ececec;
+}
+/*Guest Information*/
+#guest {
+  background: #ececec;
+}
+
+/*Events*/
+#events p {color: #fff;}
+
+#events .col-md-4 img {
+  margin: 0 0 20px;
+}
+/*Registry*/
+#registry {
+  background: #fff;
+}
+#registry h3 {
+  /*text-align: center;*/
+}
+
+@media (min-width: 768px) {
+.navbar-default,
+.navbar-default .navbar-toggle:focus {
+  float: right;
+}
+  .navbar-default .navbar-nav>li>a {
+    border-right: 1px solid #c49a6c;
+    margin: 20px 0;
+    padding: 1px 10px;
+    text-transform: lowercase;
+  }
+  .navbar-default .navbar-nav>li>a.last {
+    border: none;
+  }
+/*Banner*/
+  .bannerWrapper {
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+  .banner {
+    height: 204px;
+  }
+  .date {
+    background-image: url('../images/date.png');
+    background-repeat: no-repeat;
+    background-size: 100%; 
+    height: 135px;
+  }
+  .dateWrapper {
+    margin: 7px auto 30px;
+  }
+  /*Content*/
+  .content.main {
+    border-top: 0 none;
+    border-left: 1px solid #808080;
+    padding: 0;
+    width: 450px;
+  }
+}
+
+@media (min-width: 960px) {
+    .banner {
+      height: 345px;
+    }
+}
+
+
+
+
+
