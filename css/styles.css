@@ -188,7 +188,7 @@ img.brownstone {
 }
 
 .scroll-top {
-  display: none;
+  opacity: 0;
 }
 
 .section {
