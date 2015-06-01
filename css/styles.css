@@ -35,6 +35,10 @@ iframe {
   width: 100%;
 }
 
+.container {
+  background: rgba(0,0,0,0.8);
+}
+
 .modal-wrapper {
   background: rgba(0,0,0, 0.8);
   position: fixed;
