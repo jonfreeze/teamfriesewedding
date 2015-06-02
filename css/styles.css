@@ -183,8 +183,26 @@ iframe {
   width: 100%;
 }
 
+.event {
+  position: relative;
+}
+
+.event h3 {
+  position: absolute;
+  top: 0;
+  left: 30px;
+}
+
+.event.black h3 {
+  color: #000;
+}
+
 #photos img {
   width: 100%;
+}
+
+#photos .photo {
+  padding: 0;
 }
 
 img.brownstone {
@@ -197,12 +215,13 @@ img.brownstone {
 
 .section {
   background: rgba(0,0,0, 0.8);
+  padding: 20px;
 }
 
 @media (min-width: 768px) {
 
   body {
-      /*background: #000 url('../images/bg.jpg') left top no-repeat;*/
+      background-color: transparent;
   }
 
   header .navbar-default {
