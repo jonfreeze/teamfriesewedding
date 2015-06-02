@@ -36,7 +36,7 @@ iframe {
 }
 
 .container {
-  background: rgba(0,0,0,0.8);
+  background: rgba(0,0,0, 0.8);
 }
 
 .modal-wrapper {
@@ -180,6 +180,7 @@ iframe {
 }
 
 #events img {
+  margin: 0 0 10px;
   width: 100%;
 }
 
@@ -222,7 +223,6 @@ img.brownstone {
 
   .container {
     background: rgba(0,0,0, 0);
-    opacity: 0;
   }
 
   header .navbar-default {
@@ -230,7 +230,6 @@ img.brownstone {
   }
   
   .scroll-top {
-    /*display: block;*/
     position: fixed;
     bottom: 0;
     left: 0;
