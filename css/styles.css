@@ -14,6 +14,7 @@ body {
 h3 {
   font-family: 'Josefin Sans', sans-serif;
   font-size: 36px;
+  margin: 0 0 20px;
 }
 
 a {
@@ -24,6 +25,15 @@ a {
 a:hover {
   color: #fff;
   text-decoration: none;
+}
+
+i {
+  margin: 0 10px 0 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 ul li {
@@ -190,8 +200,8 @@ iframe {
 
 .event h3 {
   position: absolute;
-  top: 0;
-  left: 30px;
+  top: 20px;
+  left: 20px;
 }
 
 .event.black h3 {
@@ -206,10 +216,6 @@ iframe {
   padding: 0;
 }
 
-img.brownstone {
-    width: 100%;
-}
-
 .scroll-top {
   display: none;
 }
@@ -217,6 +223,11 @@ img.brownstone {
 .section {
   background: rgba(0,0,0, 0.8);
   padding: 20px;
+}
+
+.guest.col-lg-4.col-xs-12 {
+  padding: 20px;
+  border-bottom: 1px solid #fff;
 }
 
 @media (min-width: 768px) {
@@ -230,6 +241,7 @@ img.brownstone {
   }
   
   .scroll-top {
+    display: block;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -336,7 +348,7 @@ img.brownstone {
   .section {
     background: rgba(0,0,0,0.8);
     margin: 3% 0;
-    padding: 20px 50px;
+    padding: 40px 50px;
     width: 89%;
   }
 
@@ -349,12 +361,34 @@ img.brownstone {
   #photos h3 {
     margin-bottom: 20px;
   }
+
   #photos img {
     margin: 0 0 20px;
     width: 100%;
   }
 
+  #photos .photo {
+    padding: 0 10px;
+  }
+
+  #registry h3 {
+
+  }
+
+  .image-wrapper {
+    overflow: hidden;
+    height: 206px;
+    width: 206px;
+  }
+
+    .guest.col-lg-4.col-xs-12 {
+    padding: 0;
+    border-bottom: 0 none;
+  }
+
+  #footer p {
+    float: right;
+  }
+
 }
-
-
 
