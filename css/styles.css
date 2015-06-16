@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-  color: #fff;
+  color: green;
   text-decoration: none;
 }
 
@@ -40,9 +40,18 @@ ul li {
   list-style: none;
 }
 
+ul.list li {
+  margin: 0 0 10px;
+}
+
 iframe {
   min-height: 100%;
   width: 100%;
+}
+
+.trains {
+  background: transparent url('../images/trains.png') right 0 no-repeat;
+  padding: 0 50px 3px 0;
 }
 
 .container {
@@ -63,12 +72,11 @@ iframe {
 
 .modal {
   background: #000;
-  border-radius: 5px;
   position: relative;
   top: 30%;
   margin: -100px auto 0;
   min-height: 100px;
-  width: 50%;
+  width: 100%;
   display: none;
   clear: both;
 }
@@ -151,6 +159,17 @@ iframe {
   margin: 15% 0 0;
 }
 
+/*Countdown Clock*/
+.container-fluid {
+  background: #99FF99;
+  border-bottom: 1px dotted #6EB86E;
+  text-align: center;
+}
+#countdown-holder {
+  color: #6EB86E;
+  padding: 10px 0;
+}
+
 .navbar-default {
   position: fixed;
   top: 0;
@@ -177,12 +196,15 @@ iframe {
 }
 
 .nav li {
+  border-bottom: 1px solid #f1f1f1;
   background-color: #fff;
   text-align: center;
 }
 
 .navbar-default .navbar-nav>li>a {
   color: #000;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 .navbar-collapse {
@@ -201,7 +223,8 @@ iframe {
 .event h3 {
   position: absolute;
   top: 20px;
-  left: 20px;
+  left: 30px;
+  margin: 0 0 20px;
 }
 
 .event.black h3 {
@@ -228,6 +251,10 @@ iframe {
 .guest.col-lg-4.col-xs-12 {
   padding: 20px;
   border-bottom: 1px solid #fff;
+}
+
+#registry .image-wrapper {
+  margin: 0 0 20px;
 }
 
 @media (min-width: 768px) {
@@ -358,6 +385,16 @@ iframe {
     width: 100%;
   }
 
+  .event h3 {
+    position: relative !important;
+    top: 0;
+    left: 0;
+  }
+
+  .event.black h3 {
+    color: #fff;
+  }
+
   #photos h3 {
     margin-bottom: 20px;
   }
@@ -371,24 +408,42 @@ iframe {
     padding: 0 10px;
   }
 
-  #registry h3 {
-
+  .payment {
+    border-radius: 7px;
+    border: 1px solid #7a7b78;
+    margin: 20px 1px 0;
+    padding: 10px;
   }
 
   .image-wrapper {
+    margin: 0 0 20px;
     overflow: hidden;
     height: 206px;
     width: 206px;
   }
 
-    .guest.col-lg-4.col-xs-12 {
+  .guest.col-lg-4.col-xs-12 {
     padding: 0;
     border-bottom: 0 none;
   }
 
+  #footer {
+    border-radius: 7px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  #guest .col-lg-12.col-xs-12 {
+    padding-left: 0;
+  }
+
   #footer p {
-    float: right;
+    text-align: center;
+    margin: 0;
+  }
+
+  .modal {
+    width: 50%;
   }
 
 }
-
