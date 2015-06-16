@@ -1,48 +1,67 @@
-$(document).ready(function(){
+$(function(){
 
-	// Scroll To
-	$('.navbar-default .navbar-nav>li>a').click(function(){
-		event.preventDefault();
+  $('.navbar-default .navbar-nav>li>a').click(function(){
+    event.preventDefault();
 
-		var destination = $(this).attr('href');
+    var destination = $(this).attr('href');
 
-		$.scrollTo(destination, 500)
-	});
+    $.scrollTo(destination, 500)
+  });
 
-	// Back to Top
-	$('a.backtoTop').scrollTop(300);
+//  Modals
+  $('.launchModal').click(function(){
+    $('body').addClass('modal-on');
+      $('.modal').fadeIn(300);
+  });
 
-	// Expanding Images For Mobile
-	var photoExpand = $('#photos .imageWrapper');
+  $('.close').click(function(){
+    $('body').removeClass('modal-on');
+      $('.modal').hide();
 
-	$(photoExpand).click(function(){
-		$(this).toggleClass('full-img');
-	});
+  $('.modal-wrapper').click(function(){
+    $('body').removeClass('modal-on');
+  });
 
-	$('#intro img').fadeIn();
-
-
-	// Maps
-	new Maplace({
-	    show_markers: true,
-	    // Brooklyn
-	    locations: [{
-	    	title: 'Venue',
-	    	lat: 40.7036197, 
-	        lon: -73.9916468,
-	        zoom: 13
-	    },{
-	    	title: 'Rachel',
-	    	lat: -33.4794295, 
-	        lon: -70.6681567,
-	        zoom: 13
-	    },{
-	    	title: 'John',
-	    	lat: 15.7600088, 
-	        lon: -86.808365,
-	        zoom: 13
-	    }]
-	}).Load();
-
+  $('.modal').click(function(event){
+    event.stopPropagation();
+  });
 });
 
+  // Scroll below Navbar Transparency
+  $(window).scroll(function() { 
+  var scroll = $(window).scrollTop();
+
+    if (scroll >= 700) {
+        $(".scroll-top").removeClass("transparent");
+    } else {
+        $(".scroll-top").addClass("transparent");
+    }
+  });
+});
+
+// Loads Masonry after all page loads
+$(function(){
+    $(window).load(function(){
+        $('.scroll-top').scrollTop();
+    });
+});
+
+$(function() {
+    $('body').vegas({
+        slides: [
+            { src: '../images/bg.jpg' },
+            { src: '../images/bg2.jpg' }
+        ]
+    });
+});
+
+// Countdown Clock
+function wedClock() {
+  var clock = document.getElementById("countdown-holder"),
+    targetDate = new Date(2015, 07, 02);
+
+    clock.innerHTML = countdown(targetDate).toString();
+      setInterval(function(){
+        clock.innerHTML = countdown(targetDate).toString();
+      }, 1000)
+}
